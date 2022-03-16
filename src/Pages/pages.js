@@ -3,7 +3,71 @@ import {useLocation, Link} from 'react-router-dom';
 
 export function Home(){
     return(
-        <h1 className="underline">Yoo</h1>
+        <>
+            <Header />
+            <main className="relative min-h-fit w-32">
+                <h1>Templating</h1>
+            </main>
+            <Footer />
+        </>
+    );
+}
+
+export function About() {
+    return(
+        <>
+            <Header />
+            <main className="">
+                <h1>
+
+                </h1>
+            </main>
+            <Footer />
+        </>
+    );
+
+}
+
+export function Projects(){
+    return(
+        <>
+            <Header />
+            <main className="">
+                <h1>
+
+                </h1>
+            </main>
+            <Footer />
+        </>
+    );
+}
+
+export function Resume(){
+    return(
+        <>
+            <Header />
+            <main className="">
+                <h1>
+
+                </h1>
+            </main>
+            <Footer />
+        </>
+    );
+
+}
+
+export function Contact(){
+    return(
+        <>
+            <Header />
+            <main className="">
+                <h1>
+
+                </h1>
+            </main>
+            <Footer />
+        </>
     );
 }
 
@@ -21,20 +85,25 @@ export function Error(){
 
 function Header(){
     return(
-        <header>
-            <h1>
-                Soon to be Image
-            </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Yoo </Link>
-                        <Link to="/about">Yoo </Link>
-                        <Link to="/projects">Yoo </Link>
-                        <Link to="/resume">Yoo </Link>                        
-                        <Link to="/resume">Yoo </Link>                        
+        <header className="bg-slate-800">
+            <nav className="shadow-md ">
+                <ul className="nav navbar bg-transparent">
+                    <li>                     
+                        <Link className="btn navbar-brand" to="/">Gage</Link>
                     </li>
-                    
+
+                    <li>
+                        <Link className="btn" to="/about">About</Link>
+                    </li>
+                    <li>
+                        <Link className="btn" to="/projects">Projects </Link>
+                    </li>
+                    <li>
+                        <Link className="btn" to="/resume">Resume</Link>                        
+                    </li>
+                    <li>
+                        <Link className="btn" to="/contact">Contact</Link>   
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -43,8 +112,12 @@ function Header(){
 
 function Footer(){
     return(
-        <footer>
-
+        <footer className="absolute w-full inset-x-0 bottom-0
+         bg-slate-800 h-32">
+            <p>
+                E
+            </p>
+            
         </footer>
     );
 }
