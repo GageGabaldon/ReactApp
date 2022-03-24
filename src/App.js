@@ -5,10 +5,8 @@ import {
   Error,
   About,
   Projects,
-  Resume,
-  Contact
-
-} from './Pages/pages';
+  Resume
+} from './pages/pages';
 
 function App() {
   return (
@@ -18,7 +16,6 @@ function App() {
         <Route path="/about" element={<About />}/>
         <Route path="/projects" element={<Projects />}/>
         <Route path="/resume" element={<Resume />}/>
-        <Route path="/contact" element={<Contact />}/>
         <Route path="*" element={<Error />}/>
       </Routes>
     </div>
